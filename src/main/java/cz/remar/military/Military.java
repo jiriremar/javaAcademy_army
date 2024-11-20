@@ -11,19 +11,27 @@ public class Military {
         this.type = type;
     }
 
-    public Military(){
+    public Military() {
 
     }
 
-    public void printInfo(){
+    public void printInfo() {
         System.out.println("My name is " + name + " and Iam " + type.toUpperCase());
     }
 
-    public void printAttackInfo(){
-        System.out.println(name + " attacking " + damage + " power.");
+    public void printAttackInfo() {
+        System.out.println("    " + name + "(" + type + ") attacking " + damage + " power.");
     }
 
-    public String getTypeMilitary(){
+    public void printDefenceInfo() {
+        System.out.println("    " + name + "(" + type + ") defending " + damage + " power.");
+    }
+
+    public void printAdaptiveInfo() {
+        System.out.println("    " + name + "(" + type + ") attacking and defending " + damage + " power.");
+    }
+
+    public String getTypeMilitary() {
         return type;
     }
 

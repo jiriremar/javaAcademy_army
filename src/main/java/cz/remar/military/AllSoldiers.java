@@ -18,11 +18,29 @@ public class AllSoldiers {
 
     public void attack(){
         System.out.println(" ");
-        System.out.println("--- ATACKING --- ");
+        System.out.println("--- ATACKING ---\nyour attack battalion");
         for (Military military : militaryList) {
             military.printAttackInfo();
         }
     }
+
+    public void defend(){
+        System.out.println(" ");
+        System.out.println("--- DEFEND ---\nyour defend battalion");
+        for (Military military : militaryList) {
+            military.printDefenceInfo();
+        }
+    }
+
+    public void attackAndDefence(){
+        System.out.println(" ");
+        System.out.println("--- ATACKING and DEFENDING ---\nyour Super battalion");
+        for (Military military : militaryList) {
+            military.printAdaptiveInfo();
+        }
+    }
+
+
 
     public void infoMilitary(){
         System.out.println(" ");

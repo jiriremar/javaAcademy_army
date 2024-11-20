@@ -34,6 +34,9 @@ public class Main {
 
         springfieldArmy.infoArmy();
 
+
         attackBattalion.attack();
+        defendBattalion.defend();
+        adaptiveBattalion.attackAndDefence();
     }
 }
