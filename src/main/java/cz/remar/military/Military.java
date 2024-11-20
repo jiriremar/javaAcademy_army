@@ -19,6 +19,10 @@ public class Military {
         System.out.println("My name is " + name + " and Iam " + type.toUpperCase());
     }
 
+    public void printAttackInfo(){
+        System.out.println(name + " attacking " + damage + " power.");
+    }
+
     public String getTypeMilitary(){
         return type;
     }

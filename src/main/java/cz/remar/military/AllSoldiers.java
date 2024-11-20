@@ -12,12 +12,16 @@ public class AllSoldiers {
         this.militaryList = new ArrayList<>();
     }
 
-    public AllSoldiers(){
-
-    }
-
     public void addMilitary(Military military) {
         militaryList.add(military);
+    }
+
+    public void attack(){
+        System.out.println(" ");
+        System.out.println("--- ATACKING --- ");
+        for (Military military : militaryList) {
+            military.printAttackInfo();
+        }
     }
 
     public void infoMilitary(){

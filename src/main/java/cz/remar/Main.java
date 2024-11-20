@@ -34,6 +34,6 @@ public class Main {
 
         springfieldArmy.infoArmy();
 
-
+        attackBattalion.attack();
     }
 }
